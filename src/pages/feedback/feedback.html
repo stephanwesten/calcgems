@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Feedback</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div style="padding: 3%;">
+    <h3>What can be improved?</h3>
+    Questions? Missing features? Bugs?
+    <ion-textarea [(ngModel)]="feedback" rows="10" class="feedbacktextarea" maxlength="2000" placeholder="Enter feedback here..."></ion-textarea>
+    <br>
+    I welcome feedback, so don't hesitate!  If you want a reply, please include your email address.
+    <br>
+    <br>
+    <button ion-button ng-show="showButton" [disabled]="!feedback" (click)="sendFeedback()">Send feedback</button>
+
+    <span class="positive"  *ngIf="showSendingMessage">Sending feedback &nbsp;&nbsp;<ion-spinner icon="ios"></ion-spinner></span>
+    <span class="positive" *ngIf="showOkMessage">Thank you!</span>
+    <span class="assertive" *ngIf="showErrorMessage">I'm sorry, could not sent the feedback, please try again later!</span>
+  </div>
+</ion-content>

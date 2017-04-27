@@ -1,0 +1,26 @@
+
+.calculator-btn {
+  display: inline-block;
+  margin:0;
+  padding:0;
+  height: 3rem;   /* font size from root. if we would do a percentage then we get a percentage depending on the current font size */
+  vertical-align: top; /* nodig */
+  width: 100%;
+  transition: background-color 0.2s ease;  /* wat doet dit? */
+  color: #575757;
+  background-color: #f8f8f8;  /* ietsje minder knal wit gemaakt */
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: x-large;
+}
+
+/* voor de iphone passen sommige caption van buttons niet goed, dus kleiner font. Voor iPad definieren we deze class niet */
+@media (max-width: 700px)  {
+  .calculator-btn-small-text {
+    font-size: large;
+  }
+}
+
+.calculator-btn:active {
+  background-color: #9d9d9d;
+}
