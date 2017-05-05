@@ -1,4 +1,5 @@
-// Installing and configuring Karma described on https://www.joshmorony.com/introduction-to-testing-ionic-2-applications-with-testbed/
+// Installing and configuring Karma described on
+// https://www.joshmorony.com/introduction-to-testing-ionic-2-applications-with-testbed/
 
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/0.13/config/configuration-file.html
